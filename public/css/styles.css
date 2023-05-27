@@ -37,6 +37,7 @@ h2 {
   display: flex;
   height: 300px;
   width: 600px;
+  padding: 50px 50px 125px 50px;
   transform: translate(-50%, -50%);
   flex-wrap: wrap;
   cursor: pointer;
@@ -50,13 +51,31 @@ h2 {
   width: 100%;
   justify-content: center;
   padding: 2rem;
-  background-color: #fafafa;
+  background-color: rgb(181, 120, 182);
+  border-radius: 20px;
+  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
 }
 
+.weatherLocation input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
 .weatherLocation button{
-  background: #080705;
-  color:#fff;
-  border: 1px solid transparent;
+  padding: 8px 16px;
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.weatherLocation button:hover {
+  background-color: #93469a;
 }
 .weatherLocation input:focus{
   outline: 0 none;
@@ -67,7 +86,7 @@ h2 {
   height: 60%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  background: #FAFAFA;
+  background: hsl(306, 42%, 44%);
   font-family: weathericons;
   display: flex;
   align-items: center;
@@ -80,7 +99,7 @@ h2 {
 .widget .weatherInfo {
   flex: 0 0 70%;
   height: 40%;
-  background: #9d76a5;
+  background: rgb(181, 120, 182);
   border-bottom-left-radius: 20px;
   display: flex;
   align-items: center;
@@ -112,7 +131,7 @@ h2 {
 .widget .date {
   flex: 0 0 30%;
   height: 40%;
-  background: rgb(184, 31, 187);
+  background: rgb(181, 120, 182);
   border-bottom-right-radius: 20px;
   display: flex;
   justify-content: space-around;
@@ -138,9 +157,30 @@ p a {
   .main-content {
     padding: 10px;
   }
+
   .widget {
-    max-width: 300px;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
+    border-radius: 0;
+  }
+
+  .widget .weatherIcon {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .widget .weatherInfo {
+    flex: 1;
+    height: auto;
+    border-bottom-left-radius: 0;
+  }
+
+  .widget .date {
+    flex: 1;
+    height: auto;
+    border-bottom-right-radius: 0;
   }
 }
 
@@ -149,8 +189,29 @@ p a {
   .main-content {
     padding: 8px;
   }
+
   .widget {
-    max-width: 200px;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
+    border-radius: 0;
+  }
+
+  .widget .weatherIcon {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .widget .weatherInfo {
+    flex: 1;
+    height: auto;
+    border-bottom-left-radius: 0;
+  }
+
+  .widget .date {
+    flex: 1;
+    height: auto;
+    border-bottom-right-radius: 0;
   }
 }
