@@ -28,4 +28,5 @@ jobs:
         cache: 'npm'
     - run: npm i
     - run: npm i request
-    - run: npm start
+    - run: cd src
+    - run: nodemon app.js 
