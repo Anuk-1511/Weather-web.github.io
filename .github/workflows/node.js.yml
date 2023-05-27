@@ -28,5 +28,4 @@ jobs:
         cache: 'npm'
     - run: npm i
     - run: npm i request
-    - run: cd src
-    - run: node app.js 
+    - run: npm start 
