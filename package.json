@@ -1,27 +1,27 @@
 {
-  "name": "waether_app",
+  "name": "mywebsite",
   "version": "1.0.0",
-  "description": "this is a weather app",
-  "main": "index.js",
+  "description": "",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.js -e js,hbs",
     "start": "node src/app.js",
-    "server": "nodemon src/app.js -e js,hbs"
+    "build": "node-scripts build",
+    "build:css": "node-sass src/assets/css/main.scss src/assets/css/style.css"
   },
-  "author": "Anubhav Kharwar",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^5.2.3",
+    "engine": "^1.0.0",
     "express": "^4.18.2",
     "hbs": "^4.2.0",
+    "jquery": "^3.7.0",
+    "mongoose": "^7.2.1",
     "nodemon": "^2.0.22",
-    "request": "^2.88.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Anuk-1511/Weather-web.github.io.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Anuk-1511/Weather-web.github.io/issues"
-  },
-  "homepage": "https://github.com/Anuk-1511/Weather-web.github.io#readme"
+    "path": "^0.12.7",
+    "view": "^1.1.1"
+  }
 }
